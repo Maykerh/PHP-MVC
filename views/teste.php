@@ -1,0 +1,1 @@
+<h3>This is the teste view, called by: <?php echo $name ?></h3>

@@ -1,0 +1,9 @@
+#Ative o modrwrite#
+RewriteEngine On
+#ignora arquivos reais ex: image.jpg
+RewriteCond %{REQUEST_FILENAME} !-f
+#Ignora os diretórios reais#
+RewriteCond %{REQUEST_FILENAME} !-d
+#regra para rewrite#
+RewriteRule ^(.*)$ /index.php/$1 [L]
+# Guarda a raiz do projeto na variável $ e a outra parte na variável $1, adicionando o index.php no meio #
